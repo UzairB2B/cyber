@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uzair Cyber Security - Professional Interface</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Define the new Professional Color Palette */
+        :root {
+            --color-primary-dark: #3730a3; /* Indigo 700 / Deep Violet */
+            --color-accent-cta: #f59e0b;   /* Amber 500 / Rich Orange */
+            --color-background-soft: #f9fafb; /* Gray 50 */
+            --color-text-dark: #1f2937; /* Gray 800 */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-background-soft);
+            color: var(--color-text-dark);
+        }
+        /* Style for professional, clean cards */
+        .professional-card {
+            background-color: white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05); /* Soft, professional shadow */
+            transition: all 0.3s ease;
+            border: 1px solid #e5e7eb;
+        }
+        .professional-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+        /* CTA Button style: Amber background, clean hover */
+        .cta-button {
+            background-color: var(--color-accent-cta);
+            color: white;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        .cta-button:hover {
+            background-color: #d97706; /* Amber 600 */
+            transform: translateY(-1px);
+            box-shadow: 0 5px 10px rgba(245, 158, 11, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation (Deep Violet Bar) -->
+    <header class="bg-violet-800 shadow-xl sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo/Brand Name -->
+                <a href="#" class="flex items-center space-x-2 text-2xl font-extrabold text-white">
+                    <span class="text-amber-400"><b>UZAIR</b></span>
+                    <span class="text-white">CYBER SECURITY</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#services" class="text-violet-200 hover:text-amber-400 transition duration-150 font-medium">Solutions</a>
+                    <a href="ai.html" class="text-violet-200 hover:text-amber-400 transition duration-150 font-medium">Cyber Security A.I.</a>
+
+                    <a href="#scams" class="text-violet-200 hover:text-amber-400 transition duration-150 font-medium">Threat Alerts</a>
+                    <a href="#report" class="text-violet-200 hover:text-amber-400 transition duration-150 font-medium">Incident Report</a>
+                    <a href="#footer" class="text-violet-200 hover:text-amber-400 transition duration-150 font-medium">Contact</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <button id="openContactModalDesktop" class="hidden md:block cta-button px-5 py-2 rounded-md shadow-md">
+                    Emergency Hotline
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuButton" class="md:hidden p-2 rounded-md text-violet-100 hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-amber-400">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobileMenu" class="hidden md:hidden bg-violet-800 shadow-xl border-t border-violet-700">
+            <nav class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-violet-100 hover:bg-violet-700">Solutions</a>
+                <a href="ai.html" class="block px-3 py-2 rounded-md text-base font-medium text-violet-100 hover:bg-violet-700">Cyber Security A.I.</a>           
+                <a href="#scams" class="block px-3 py-2 rounded-md text-base font-medium text-violet-100 hover:bg-violet-700">Threat Alerts</a>
+                <a href="#report" class="block px-3 py-2 rounded-md text-base font-medium text-violet-100 hover:bg-violet-700">Incident Report</a>
+                <a href="#footer" class="block px-3 py-2 rounded-md text-base font-medium text-violet-100 hover:bg-violet-700">Contact</a>
+                <button id="openContactModalMobile" class="w-full cta-button px-3 py-2 mt-2 rounded-md">
+                    Emergency Hotline
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section: Professional Authority -->
+        <section class="bg-white pt-16 pb-20 sm:pt-24 sm:pb-32 border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <p class="text-lg text-violet-600 mb-4 font-semibold">Digital Asset Protection Assistence</p>
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold mb-6 text-gray-900">
+                    Trusted Security & Financial Recovery
+                </h1>
+                <p class="text-xl sm:text-2xl mb-10 max-w-4xl mx-auto text-gray-600">
+                    We help people by providing quick assistance and regular updates related to cyber frauds, ensuring your digital safety across India.
+                </p>
+             <a href="ai.html">
+  <button style="padding: 10px 20px; background:#4F46E5; color:white; border:none; border-radius:8px; cursor:pointer;">
+    Click here for AI Assistance
+  </button>
+</a>
+
+</a>
+
+            </div>
+        </section>
+
+        <!-- Services Section: Core Protocols -->
+        <section id="services" class="py-16 sm:py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-gray-900 text-center mb-4">
+                    Security Services
+                </h2>
+                <p class="text-lg text-gray-600 text-center mb-16">
+                    Professional protocols for prevention, analysis, and recovery.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Protocol 1: Digital Recovery -->
+                    <div class="professional-card p-6 rounded-lg border-t-4 border-red-500">
+                        <div class="mb-4 text-red-500">
+                            <i data-lucide="scan" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Rapid Fund Tracing</h3>
+                        <p class="text-gray-600 text-sm">Immediate forensic tracing and transactional intervention post-fraud. Our priority is asset freezing and recovery speed.</p>
+                    </div>
+
+                    <!-- Protocol 2: Preemptive Defense -->
+                    <div class="professional-card p-6 rounded-lg border-t-4 border-violet-500">
+                        <div class="mb-4 text-violet-600">
+                            <i data-lucide="lock" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">System Hardening</h3>
+                        <p class="text-gray-600 text-sm">Comprehensive security assessments, vulnerability patching, and deployment of advanced MFA and encryption standards.</p>
+                    </div>
+
+                    <!-- Protocol 3: Intelligence & Analysis -->
+                    <div class="professional-card p-6 rounded-lg border-t-4 border-amber-500">
+                        <div class="mb-4 text-amber-500">
+                            <i data-lucide="eye" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Threat Intelligence</h3>
+                        <p class="text-gray-600 text-sm">Real-time analysis of new cyber attack vectors, including deepfake scams, phishing trends, and evolving malware tactics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scam Warnings Section: Alert Log -->
+        <section id="scams" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-violet-700 text-center mb-12">
+                    Current Threat Alert Log
+                </h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <!-- Threat 1: Phishing & Vishing -->
+                    <div class="professional-card p-6 rounded-lg border-l-4 border-orange-500">
+                        <h4 class="text-xl font-bold text-orange-600 mb-2 flex items-center">
+                            <i data-lucide="mail-check" class="w-5 h-5 mr-2"></i> Impersonation Phishing
+                        </h4>
+                        <p class="text-gray-700 mb-3 text-sm">Beware of emails/texts demanding <b>immediate action</b> or <b>credential verification</b> from banks or authorities. <b>Action:</b> Always verify using official contact numbers, never click links in suspicious messages.</p>
+                    </div>
+
+                    <!-- Threat 2: Investment Fraud -->
+                    <div class="professional-card p-6 rounded-lg border-l-4 border-orange-500">
+                        <h4 class="text-xl font-bold text-orange-600 mb-2 flex items-center">
+                            <i data-lucide="trending-down" class="w-5 h-5 mr-2"></i> High-Yield Investment Fraud
+                        </h4>
+                        <p class="text-gray-700 mb-3 text-sm">Scams promising <b>unrealistically high returns</b> with zero risk, often using sophisticated websites or deepfake videos. <b>Action:</b> Consult a licensed financial advisor before investing. If it sounds too good, it is a risk.</p>
+                    </div>
+
+                    <!-- Threat 3: Remote Access / Tech Support -->
+                    <div class="professional-card p-6 rounded-lg border-l-4 border-orange-500">
+                        <h4 class="text-xl font-bold text-orange-600 mb-2 flex items-center">
+                            <i data-lucide="laptop" class="w-5 h-5 mr-2"></i> Unsolicited Remote Access
+                        </h4>
+                        <p class="text-gray-700 mb-3 text-sm">Unwanted calls claiming a virus is on your PC to trick you into granting <b>remote control</b>. <b>Action:</b> Never grant remote access to unsolicited callers. Hang up and contact your provider directly.</p>
+                    </div>
+
+                    <!-- Threat 4: Money Mule Schemes -->
+                    <div class="professional-card p-6 rounded-lg border-l-4 border-orange-500">
+                        <h4 class="text-xl font-bold text-orange-600 mb-2 flex items-center">
+                            <i data-lucide="briefcase" class="w-5 h-5 mr-2"></i> Financial Transaction Laundering
+                        </h4>
+                        <p class="text-gray-700 mb-3 text-sm">Employment offers or requests to use your personal bank account to <b>transfer funds for a fee</b>. <b>Action:</b> This is illegal money laundering. Refuse immediately to avoid criminal liability.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reporting Guidance Section: Immediate Response -->
+        <section id="report" class="py-16 sm:py-24 bg-gray-50">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-extrabold text-gray-900 mb-6">
+                    Incident Response Flow
+                </h2>
+                <p class="text-xl text-gray-600 mb-10">
+                    If funds are compromised, follow these critical steps immediately for optimal recovery:
+                </p>
+
+                <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-8">
+                    <!-- Step 1: Helpline -->
+                    <div class="flex-1 professional-card p-6 rounded-lg border-l-4 border-violet-600">
+                        <h3 class="text-3xl font-bold text-violet-700 mb-3 flex items-center justify-center md:justify-start">
+                            <span class="text-red-500 mr-3">1.</span> Call 1930
+                        </h3>
+                        <p class="text-gray-600">The first and most critical step. Contact the <b>National Cyber Crime Helpline (1930)</b> to initiate an immediate fund freeze across banking channels.</p>
+                    </div>
+
+                    <!-- Step 2: Online Reporting -->
+                    <div class="flex-1 professional-card p-6 rounded-lg border-l-4 border-violet-600">
+                        <h3 class="text-3xl font-bold text-violet-700 mb-3 flex items-center justify-center md:justify-start">
+                            <span class="text-red-500 mr-3">2.</span> Formalize Report
+                        </h3>
+                        <p class="text-gray-600">Submit a detailed report on the <b>National Cyber Crime Reporting Portal</b>. Gather all evidence (logs, screenshots) before starting the online process.</p>
+                    </div>
+                </div>
+                
+                <p class="mt-12 text-lg text-gray-700 font-semibold">
+                    Need guided assistance? <span class="text-amber-600">Contact our specialists</span> for flawless execution of these protocols.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer: System Log -->
+    <footer id="footer" class="bg-violet-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-violet-700 pb-8 mb-8">
+                <!-- Branding & Tagline -->
+                <div>
+                    <h4 class="text-2xl font-extrabold mb-3 text-amber-400">
+                        UZAIR B2B SERVICES 
+                    </h4>
+                    <p class="text-sm text-violet-200">
+                        Tech & A.I. Developer with a higher standard of digital security and resilience.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h5 class="text-xl font-semibold mb-4 text-white">Quick Links</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://uzairb2b.blogspot.com/" class="text-violet-200 hover:text-amber-400 transition duration-150">Uzair B2B Services</a></li>
+                        <li><a href="https://uzairaiservices.blogspot.com/" class="text-violet-200 hover:text-amber-400 transition duration-150">Uzair A.I. Services</a></li>
+                        <li><a href="https://educationsimplified.github.io/mgkvp/" class="text-violet-200 hover:text-amber-400 transition duration-150">Education Simplified</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal/BB Services -->
+                <div>
+                    <h5 class="text-xl font-semibold mb-4 text-white">Compliance</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://uzairb2b.github.io/AI/policy.html" class="text-violet-200 hover:text-amber-400 transition duration-150">Privacy Policy</a></li>
+                        <li><a href="https://uzairb2b.github.io/AI/term.html#" class="text-violet-200 hover:text-amber-400 transition duration-150">Terms of Service</a></li>
+                       
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h5 class="text-xl font-semibold mb-4 text-white">Contact Information</h5>
+                    <p class="text-violet-200 text-sm">Email: uzairb2bservices@gmail.com</p>
+                    <p class="text-amber-400 font-bold text-sm">Emergency Line: +91 9335723334</p>
+                    <p class="text-violet-400 mt-2 text-xs">Operational Hours: 24/7</p>
+                </div>
+            </div>
+            
+            <!-- Disclaimer Section (New) -->
+       <div class="mt-8 pt-4 border-t border-orange-600 text-center bg-orange-100 py-4 rounded-lg">
+    <p class="text-sm font-semibold text-orange-700 mb-2">IMPORTANT DISCLAIMER</p>
+    <p class="text-xs text-orange-800 max-w-4xl mx-auto leading-relaxed">
+        Uzair Cyber Security is part of <b>Uzair B2B Services</b> and operates independently. This service is 
+        <b>not affiliated with, endorsed, or chosen by the Government of India</b> or any specific state or central agency. 
+        The provided guidance is a personal contribution by a dedicated citizen to assist the citizens of our country. 
+        For immediate assistance and personalized guidance, please <b>contact the owner personally</b> via the Emergency Line 
+        before proceeding with formal legal action.
+    </p>
+</div>
+
+            <div class="text-center text-sm text-violet-400 mt-4">
+                &copy; 2025 Uzair Cyber Security. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal (Emergency Protocol Access - Hidden by default) -->
+    <div id="contactModal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black bg-opacity-70 backdrop-blur-sm">
+        <div class="bg-white rounded-xl shadow-2xl p-8 w-11/12 max-w-lg transform transition-all duration-300 border-t-8 border-red-600">
+            <div class="flex justify-between items-start mb-4 border-b border-gray-200 pb-3">
+                <h3 class="text-2xl font-bold text-red-600 flex items-center">
+                    <i data-lucide="alert-triangle" class="w-6 h-6 mr-2"></i> URGENT INCIDENT REPORT
+                </h3>
+                <button id="closeContactModal" class="text-gray-400 hover:text-red-600">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <p class="text-gray-700 mb-4 text-sm">
+                <b>PRIORITY ACCESS:</b> Please provide details below. Quick submission enables immediate response and fund tracing initiation.
+            </p>
+            <form id="contactForm">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-violet-700">Name</label>
+                    <input type="text" id="name" name="name" required class="mt-1 block w-full border border-gray-300 bg-gray-50 text-gray-900 rounded-md shadow-sm p-2 focus:ring-amber-500 focus:border-amber-500">
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="block text-sm font-medium text-violet-700">Contact Number</label>
+                    <input type="tel" id="phone" name="phone" required class="mt-1 block w-full border border-gray-300 bg-gray-50 text-gray-900 rounded-md shadow-sm p-2 focus:ring-amber-500 focus:border-amber-500">
+                </div>
+                <div class="mb-6">
+                    <label for="details" class="block text-sm font-medium text-violet-700">Incident Summary</label>
+                    <textarea id="details" name="details" rows="3" required class="mt-1 block w-full border border-gray-300 bg-gray-50 text-gray-900 rounded-md shadow-sm p-2 focus:ring-amber-500 focus:border-amber-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-red-600 text-white px-4 py-3 rounded-md font-semibold hover:bg-red-700 shadow-lg transition duration-150">
+                    Submit Emergency Data
+                </button>
+            </form>
+            
+            <p id="formMessage" class="mt-4 text-center text-sm font-mono text-green-600 font-bold hidden">
+                DATA RECEIVED. Specialist is being dispatched.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize Lucide icons
+            lucide.createIcons();
+
+            const mobileMenuButton = document.getElementById('mobileMenuButton');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            // Mobile Menu Toggle Logic
+            mobileMenuButton.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.toggle('hidden');
+                // Change icon based on state
+                // This logic correctly updates the Lucide icon without re-initializing the whole library unnecessarily
+                if (isHidden) {
+                    mobileMenuButton.innerHTML = '<i data-lucide="menu" class="w-6 h-6"></i>';
+                } else {
+                    mobileMenuButton.innerHTML = '<i data-lucide="x" class="w-6 h-6"></i>';
+                }
+                lucide.createIcons();
+            });
+
+            // Modal Logic (Contact Form)
+            const contactModal = document.getElementById('contactModal');
+            const contactForm = document.getElementById('contactForm');
+            const formMessage = document.getElementById('formMessage');
+            const openButtons = [
+                document.getElementById('openContactModalHero'),
+                document.getElementById('openContactModalDesktop'),
+                document.getElementById('openContactModalMobile')
+            ].filter(btn => btn !== null); 
+
+            const closeButton = document.getElementById('closeContactModal');
+
+            function showModal() {
+                contactModal.classList.remove('hidden');
+                contactModal.classList.add('flex');
+            }
+
+            function hideModal() {
+                contactModal.classList.add('hidden');
+                contactModal.classList.remove('flex');
+                // Reset form state on close
+                contactForm.reset();
+                formMessage.classList.add('hidden');
+                contactForm.classList.remove('hidden');
+            }
+
+            openButtons.forEach(button => {
+                button.addEventListener('click', showModal);
+            });
+
+            closeButton.addEventListener('click', hideModal);
+
+            // Hide modal if clicking outside the modal content
+            contactModal.addEventListener('click', (e) => {
+                if (e.target === contactModal) {
+                    hideModal();
+                }
+            });
+
+            // Form Submission Handler
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                console.log('Incident Data Logged:', {
+                    name: document.getElementById('name').value,
+                    phone: document.getElementById('phone').value,
+                    details: document.getElementById('details').value
+                });
+
+                // Display success message and hide the form
+                contactForm.classList.add('hidden');
+                formMessage.classList.remove('hidden');
+
+                // Auto-close modal after a delay
+                setTimeout(hideModal, 4000);
+            });
+
+            // Close mobile menu when a navigation link is clicked
+            document.querySelectorAll('#mobileMenu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.innerHTML = '<i data-lucide="menu" class="w-6 h-6"></i>';
+                    lucide.createIcons();
+                });
+            });
+
+        });
+    </script>
+</body>
+</html>
